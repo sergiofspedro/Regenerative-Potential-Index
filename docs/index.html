@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sérgio Pedro – Portfolio</title>
+  <title>PhD Research: Regenerative Potential Index – Sérgio Pedro</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -21,13 +21,14 @@
   <div class="sidebar-projects">
     <div class="sidebar-projects-title">Projects</div>
     <button class="sidebar-project-link active" onclick="showProject('rpi', this)">
-      Regenerative Potential Index – Amsterdam
+      Regenerative Potential Index
     </button>
-    <!-- Add future projects here:
-    <button class="sidebar-project-link" onclick="showProject('project2', this)">
-      Your Next Project
+    <button class="sidebar-project-link" onclick="showProject('miningeurope', this)">
+      MiningEurope
     </button>
-    -->
+    <button class="sidebar-project-link" onclick="showProject('loop', this)">
+      LOOP – Civic Participation Gateway
+    </button>
   </div>
 
   <div class="sidebar-contact">
@@ -58,36 +59,44 @@
 <!-- ═══════════════════ MAIN ════════════════════════ -->
 <main class="main">
 
-  <!-- ── RPI PROJECT ── -->
+  <!-- ══════════════════════════════════════════════════════════
+       PROJECT 1 – RPI
+  ══════════════════════════════════════════════════════════════ -->
   <section id="project-rpi">
 
-    <!-- Hero banner -->
     <div class="hero-banner">
       <div class="hero-text">
-        <h1>Regenerative Potential Index<br>Amsterdam</h1>
-        <div class="hero-sub-banner">PhD Research · Urban Regeneration Evaluation Framework</div>
+        <h1>PhD Research:<br>Regenerative Potential Index</h1>
+        <div class="hero-sub-banner">Original Framework · Urban Regeneration Evaluation · Amsterdam Case Study</div>
       </div>
     </div>
 
-    <!-- Article body -->
     <div class="article">
 
-      <h1 class="article-title">Regenerative Potential Index – Identification and Assessment in Amsterdam</h1>
-      <div class="article-date">2024, PhD Research</div>
+      <h1 class="article-title">Regenerative Potential Index – An Original Evaluation Framework Applied to Amsterdam</h1>
+      <div class="article-date">2024, PhD Research · Management PhD</div>
 
       <p>
-        The <strong>Regenerative Potential Index (RPI)</strong> is an evaluation framework for assessing the
-        regenerative potential of urban areas — applicable to both <strong>public and private sectors</strong>.
-        Rather than measuring sustainability in isolation, the RPI asks a forward-looking question: <em>how capable
-        is a territory of regenerating itself?</em> It aggregates multiple indicators across four dimensions —
-        Economic, Environmental, Political and Social — into a single composite score (0–100) per territorial unit
-        per year.
+        The <strong>Regenerative Potential Index (RPI)</strong> is an <strong>original evaluation framework</strong>
+        I developed as part of my PhD research to measure and compare the regenerative potential of urban territories.
+        Unlike existing sustainability indices, the RPI is designed to be applicable to <strong>both public and private
+        sectors</strong> and asks a forward-looking question: <em>how capable is a territory of regenerating itself?</em>
+        It aggregates multiple indicators across four dimensions — Economic, Environmental, Political and Social — into
+        a single composite score (0–100) per territorial unit per year.
+      </p>
+
+      <p>
+        The RPI framework introduces a novel methodological approach that combines dimension weighting, z-score
+        normalisation, and temporal aggregation to produce a score that is <strong>comparable across geographies and
+        over time</strong>. Its design explicitly targets the gap between static sustainability audits and dynamic
+        regenerative capacity assessment — making it equally usable for urban planning authorities, real-estate
+        developers, impact investors, and policy evaluators.
       </p>
 
       <p>
         This case study applies the RPI to the <strong>eight districts of the municipality of Amsterdam</strong>
-        over a decade of data (2015–2024). The municipality's overall RPI in 2024 stands at <strong>48.42</strong>,
-        down from 50.19 in 2015. This modest decline conceals important contrasts: the <strong>Environmental</strong>
+        over a decade of data (2015–2024). The municipality's overall RPI in 2024 stands at <strong>47.93</strong>,
+        down from 49.98 in 2015. This modest decline conceals important contrasts: the <strong>Environmental</strong>
         dimension improved (+1.46 pts) while <strong>Economic</strong> performance deteriorated sharply (–7.21 pts,
         reaching 43.01 in 2024 — the most constrained dimension). The COVID-19 pandemic left a visible shock in
         2020–2021, particularly on Economic and Political indicators.
@@ -104,7 +113,7 @@
         <h2>RPI Overall Score – Time Evolution (2015–2024)</h2>
         <p class="chart-desc">
           How has each Amsterdam district's regenerative potential changed over time? The municipality aggregate
-          (black line) declined slightly from 50.19 to 48.42 between 2015 and 2024, masking significant
+          (black line) declined slightly from 49.98 to 47.93 between 2015 and 2024, masking significant
           heterogeneity across districts. Hover over any point to inspect values; click a legend entry to
           isolate a specific district.
         </p>
@@ -123,7 +132,7 @@
           reflecting structural shifts in the local economy. Use the dropdown to switch between Economic,
           Environmental, Political and Social panels.
         </p>
-        <iframe class="chart-frame" src="charts/timeseries_dimensions.html"
+        <iframe class="chart-frame tall" src="charts/timeseries_dimensions.html"
           title="RPI Dimension Time Series" loading="lazy"></iframe>
       </div>
 
@@ -133,10 +142,9 @@
         <h2>District Comparison – 2024 Snapshot</h2>
         <p class="chart-desc">
           Which districts perform best — and worst — in 2024? The bar chart ranks all eight districts
-          plus the municipality aggregate (purple) for each dimension. Significant spatial inequality
-          exists within Amsterdam: some districts score well above average on Social indicators while
-          lagging on Economic ones. Use the dropdown to compare Overall, Economic, Environmental,
-          Political or Social performance.
+          plus the municipality aggregate for each dimension. Significant spatial inequality exists within
+          Amsterdam: some districts score well above average on Social indicators while lagging on Economic
+          ones. Use the dropdown to compare Overall, Economic, Environmental, Political or Social performance.
         </p>
         <iframe class="chart-frame" src="charts/histogram_2024.html"
           title="District Histogram 2024" loading="lazy"></iframe>
@@ -177,6 +185,119 @@
     <footer class="article-footer">
       <span>PhD Research · Urban Regeneration · Management PhD</span>
       <a href="https://github.com/sergiofspedro/Regenerative-Potential-Index" target="_blank">
+        View source on GitHub →
+      </a>
+    </footer>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PROJECT 2 – MININGEUROPE
+  ══════════════════════════════════════════════════════════════ -->
+  <section id="project-miningeurope" style="display:none">
+
+    <div class="hero-banner hero-banner--mining">
+      <div class="hero-text">
+        <h1>MiningEurope</h1>
+        <div class="hero-sub-banner">European Mining Data · Research Tool</div>
+      </div>
+    </div>
+
+    <div class="article">
+
+      <h1 class="article-title">MiningEurope</h1>
+      <div class="article-date">PhD Research</div>
+
+      <p>
+        <strong>MiningEurope</strong> is a research tool for exploring and analysing European mining activity
+        data. It provides structured access to mining site records across EU member states, supporting research
+        on resource extraction, land-use change, and environmental impact at a continental scale.
+      </p>
+
+      <p>
+        The project is part of ongoing PhD research into the intersection of resource governance, territorial
+        development, and sustainability evaluation.
+      </p>
+
+      <a class="project-gh-link" href="https://github.com/sergiofspedro/Miningeurope" target="_blank">
+        View on GitHub →
+      </a>
+
+    </div>
+
+    <footer class="article-footer">
+      <span>PhD Research</span>
+      <a href="https://github.com/sergiofspedro/Miningeurope" target="_blank">View source on GitHub →</a>
+    </footer>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PROJECT 3 – LOOP
+  ══════════════════════════════════════════════════════════════ -->
+  <section id="project-loop" style="display:none">
+
+    <div class="hero-banner hero-banner--loop">
+      <div class="hero-text">
+        <h1>LOOP</h1>
+        <div class="hero-sub-banner">Multi-Channel Civic Participation Gateway · EU Civic Tech Hackathon 2026</div>
+      </div>
+    </div>
+
+    <div class="article">
+
+      <h1 class="article-title">LOOP – A Civic Participation Gateway for Every EU Citizen</h1>
+      <div class="article-date">2026 · EU Commission Civic Tech Hackathon</div>
+
+      <p>
+        <strong>LOOP</strong> is an open-source civic participation gateway built for the <strong>EU Commission
+        Civic Tech Hackathon 2026</strong>. It does not replace existing official consultation platforms —
+        it makes them <strong>discoverable, understandable, and actionable</strong> for every EU citizen,
+        including the approximately <strong>40–45 million people without a smartphone</strong> who are
+        completely unreachable by any existing civic platform.
+      </p>
+
+      <p>
+        Citizens interact through the channel that works for them: a <strong>voice call</strong> (keypad
+        voting, no smartphone needed), <strong>RCS rich-card messages</strong> (native on all modern phones,
+        no app install), an <strong>embedded chat bot</strong> (WhatsApp, Telegram, Signal), or a full
+        <strong>web portal</strong>. All channels share the same backend — a single registration links a
+        citizen's verified identity to their municipality, country, EU level, and topic preferences.
+      </p>
+
+      <p>
+        The gateway connects via API to official platforms (Decidim, Have Your Say, national and municipal
+        portals). Each consultation is presented as a four-field card: title, theme, deadline, and an
+        <strong>AI-generated plain-language summary</strong> produced locally on EU-hosted infrastructure —
+        no citizen data reaches foreign AI providers. Citizens choose from four responses: Know More,
+        Express My Opinion, Vote YES, or Vote NO. Contributions route directly to the official platform
+        where possible, or redirect with the contribution pre-filled so participation is always legally valid.
+      </p>
+
+      <p>
+        LOOP closes the feedback loop that drives EU abstention (49.3%): every contribution triggers an
+        immediate confirmation and a <strong>live tracking page</strong> showing each consultation's
+        status from Open → Under Review → Decision Published → Implementation. For citizens without a
+        smartphone, the same status is available by phone keypad. The shareable invitation built into
+        every confirmation message turns each act of participation into a recruitment event for the next.
+      </p>
+
+      <p>
+        The architecture is fully open-source (OpenClaw, Infisical, Docker, GitHub Actions, local open-weight
+        LLMs), modular, and designed as <strong>shared civic infrastructure</strong> — the same codebase
+        deploys for a single municipality or scales to EU-wide adoption. Each new consultation source is
+        added via a connector, not manual scraping.
+      </p>
+
+      <a class="project-gh-link" href="https://github.com/sergiofspedro/eu-commission-civic-tech-hackathon-2026" target="_blank">
+        View on GitHub →
+      </a>
+
+    </div>
+
+    <footer class="article-footer">
+      <span>EU Commission Civic Tech Hackathon 2026</span>
+      <a href="https://github.com/sergiofspedro/eu-commission-civic-tech-hackathon-2026" target="_blank">
         View source on GitHub →
       </a>
     </footer>

@@ -257,15 +257,15 @@ body {
 
 .chart-frame {
   width: 100%;
-  height: 480px;
+  height: 620px;
   border: 1px solid var(--border);
   border-radius: 4px;
   display: block;
   background: #fafafa;
 }
 
-.chart-frame.tall { height: 600px; }
-.chart-frame.map  { height: 520px; }
+.chart-frame.tall { height: 720px; }
+.chart-frame.map  { height: 620px; }
 
 .chart-divider {
   border: none;
@@ -285,6 +285,26 @@ body {
 
 .article-footer a { color: var(--accent); text-decoration: none; }
 .article-footer a:hover { text-decoration: underline; }
+
+/* ─── HERO VARIANTS ───────────────────────────────────────── */
+.hero-banner--mining {
+  background: linear-gradient(135deg, #2a1a0e 0%, #6e3d1f 40%, #3a2a0a 100%);
+}
+
+.hero-banner--loop {
+  background: linear-gradient(135deg, #0e1a2a 0%, #1f3d6e 40%, #0a1a3a 100%);
+}
+
+/* ─── PROJECT GITHUB LINK ─────────────────────────────────── */
+.project-gh-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+.project-gh-link:hover { text-decoration: underline; }
 
 /* ─── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 860px) {
