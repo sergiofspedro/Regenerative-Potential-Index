@@ -78,20 +78,24 @@
       <p>
         The <strong>Regenerative Potential Index (RPI)</strong> is an evaluation framework for assessing the
         regenerative potential of urban areas — applicable to both <strong>public and private sectors</strong>.
-        It aggregates multiple indicators across four dimensions — Economic, Environmental, Political and Social —
-        into a single composite score (0–100) per territorial unit per year.
+        Rather than measuring sustainability in isolation, the RPI asks a forward-looking question: <em>how capable
+        is a territory of regenerating itself?</em> It aggregates multiple indicators across four dimensions —
+        Economic, Environmental, Political and Social — into a single composite score (0–100) per territorial unit
+        per year.
       </p>
 
       <p>
-        This case study applies the RPI methodology to the <strong>districts of the municipality of Amsterdam</strong>,
-        tracking performance across a decade of data (2015–2024) and projecting three future scenarios to 2030 and 2050:
-        Constrained, Business-As-Usual, and Optimistic. All indicators are normalised using a z-score approach (k=15),
-        with direction adjustment and neutralisation for near-constant series.
+        This case study applies the RPI to the <strong>eight districts of the municipality of Amsterdam</strong>
+        over a decade of data (2015–2024). The municipality's overall RPI in 2024 stands at <strong>48.42</strong>,
+        down from 50.19 in 2015. This modest decline conceals important contrasts: the <strong>Environmental</strong>
+        dimension improved (+1.46 pts) while <strong>Economic</strong> performance deteriorated sharply (–7.21 pts,
+        reaching 43.01 in 2024 — the most constrained dimension). The COVID-19 pandemic left a visible shock in
+        2020–2021, particularly on Economic and Political indicators.
       </p>
 
       <p>
-        The visualisations below are interactive — hover over data points to inspect values, click the legend to
-        isolate specific districts or scenarios, and use the dimension buttons to switch between the four RPI dimensions.
+        The visualisations below are interactive — hover over data points to inspect values, click legend entries
+        to isolate specific districts or scenarios, and use the dropdown menus to switch between dimensions.
       </p>
 
       <!-- 1. Overall time series -->
@@ -99,8 +103,10 @@
       <div class="chart-section">
         <h2>RPI Overall Score – Time Evolution (2015–2024)</h2>
         <p class="chart-desc">
-          District-level RPI trajectories over time. The municipality aggregate is shown in black.
-          Hover to inspect values; click legend entries to isolate specific districts.
+          How has each Amsterdam district's regenerative potential changed over time? The municipality aggregate
+          (black line) declined slightly from 50.19 to 48.42 between 2015 and 2024, masking significant
+          heterogeneity across districts. Hover over any point to inspect values; click a legend entry to
+          isolate a specific district.
         </p>
         <iframe class="chart-frame" src="charts/timeseries_overall.html"
           title="RPI Overall Time Series" loading="lazy"></iframe>
@@ -111,8 +117,11 @@
       <div class="chart-section">
         <h2>RPI by Dimension – Time Evolution</h2>
         <p class="chart-desc">
-          Switch between Economic, Environmental, Political and Social dimensions using the buttons
-          above the chart. Municipality average shown in black on each panel.
+          Not all dimensions evolve the same way. The <strong>Environmental</strong> dimension is the strongest
+          (51.53 in 2024) and has been improving, driven by air quality and energy transitions. The
+          <strong>Economic</strong> dimension is the weakest (43.01) and has declined the most since 2015,
+          reflecting structural shifts in the local economy. Use the dropdown to switch between Economic,
+          Environmental, Political and Social panels.
         </p>
         <iframe class="chart-frame" src="charts/timeseries_dimensions.html"
           title="RPI Dimension Time Series" loading="lazy"></iframe>
@@ -123,8 +132,11 @@
       <div class="chart-section">
         <h2>District Comparison – 2024 Snapshot</h2>
         <p class="chart-desc">
-          Cross-district RPI scores for 2024. Select Overall or any individual dimension using the buttons.
-          The municipality aggregate (purple) is shown alongside all districts.
+          Which districts perform best — and worst — in 2024? The bar chart ranks all eight districts
+          plus the municipality aggregate (purple) for each dimension. Significant spatial inequality
+          exists within Amsterdam: some districts score well above average on Social indicators while
+          lagging on Economic ones. Use the dropdown to compare Overall, Economic, Environmental,
+          Political or Social performance.
         </p>
         <iframe class="chart-frame" src="charts/histogram_2024.html"
           title="District Histogram 2024" loading="lazy"></iframe>
@@ -135,8 +147,12 @@
       <div class="chart-section">
         <h2>Scenario Projections – 2030 &amp; 2050</h2>
         <p class="chart-desc">
-          Three forecast scenarios extrapolated from 2024 historical trends using percentile-based annual deltas
-          (p25 = Constrained, p50 = BAU, p75 = Optimistic). Toggle lines via the legend.
+          Where is Amsterdam heading? Three scenarios are projected from 2024 onwards using
+          percentile-based annual change rates derived from the historical record:
+          <strong>Constrained</strong> (pessimistic, p25 trend) forecasts a decline to 35.79 by 2050;
+          <strong>Business-As-Usual</strong> (BAU, p50 trend) projects a marginal improvement to 49.34;
+          <strong>Optimistic</strong> (p75 trend) reaches 57.44. The gap between scenarios highlights
+          how sensitive regenerative trajectories are to policy choices made in the next few years.
         </p>
         <iframe class="chart-frame" src="charts/scenarios.html"
           title="RPI Scenarios" loading="lazy"></iframe>
@@ -147,7 +163,9 @@
       <div class="chart-section">
         <h2>Interactive District Map – Amsterdam (2024)</h2>
         <p class="chart-desc">
-          Choropleth map of RPI Overall scores across Amsterdam's districts in 2024.
+          Spatial distribution of RPI Overall scores across Amsterdam's districts in 2024. Darker
+          colours indicate higher regenerative potential. The map reveals clear spatial patterns —
+          inner-city and waterfront districts tend to score differently from outer peripheral ones.
           Pan, zoom and hover over each district to read its score.
         </p>
         <iframe class="chart-frame map" src="charts/map_2024.html"
@@ -159,8 +177,11 @@
       <div class="chart-section">
         <h2>Indicator Correlation Matrix</h2>
         <p class="chart-desc">
-          Pairwise Pearson correlations between all normalised indicators (post z-score normalization).
-          Blue = positive correlation, Red = negative. Hover to read exact values.
+          How do the individual indicators relate to each other? This heatmap shows pairwise Pearson
+          correlations between all normalised indicators after z-score transformation. Strong positive
+          correlations (blue) suggest indicators that move together — potential candidates for
+          dimension consolidation. Negative correlations (red) reveal trade-offs between regenerative
+          objectives. Hover over any cell to read the exact correlation value.
         </p>
         <iframe class="chart-frame tall" src="charts/correlation.html"
           title="Indicator Correlation Heatmap" loading="lazy"></iframe>
