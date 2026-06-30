@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sérgio Pedro – Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════ SIDEBAR ════════════════════ -->
+<aside class="sidebar">
+
+  <img class="sidebar-avatar" src="https://github.com/sergiofspedro.png" alt="Sérgio Pedro" />
+  <div class="sidebar-name">Sérgio Pedro</div>
+  <div class="sidebar-dot"></div>
+  <p class="sidebar-bio">
+    PhD researcher working on urban regeneration evaluation frameworks applicable to public and private sectors.
+  </p>
+
+  <div class="sidebar-projects">
+    <div class="sidebar-projects-title">Projects</div>
+    <button class="sidebar-project-link active" onclick="showProject('rpi', this)">
+      Regenerative Potential Index – Amsterdam
+    </button>
+    <!-- Add future projects here:
+    <button class="sidebar-project-link" onclick="showProject('project2', this)">
+      Your Next Project
+    </button>
+    -->
+  </div>
+
+  <div class="sidebar-contact">
+    <div class="sidebar-contact-label">Contact me</div>
+    <div class="contact-icons">
+
+      <!-- GitHub -->
+      <a href="https://github.com/sergiofspedro" target="_blank" title="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/sergiofspedro" target="_blank" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:emailsergiopedro@gmail.com" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+
+    </div>
+    <div class="sidebar-copy">2025 © Sérgio Pedro</div>
+  </div>
+
+</aside>
+
+<!-- ═══════════════════ MAIN ════════════════════════ -->
+<main class="main">
+
+  <!-- ── RPI PROJECT ── -->
+  <section id="project-rpi">
+
+    <!-- Hero banner -->
+    <div class="hero-banner">
+      <div class="hero-text">
+        <h1>Regenerative Potential Index<br>Amsterdam</h1>
+        <div class="hero-sub-banner">PhD Research · Urban Regeneration Evaluation Framework</div>
+      </div>
+    </div>
+
+    <!-- Article body -->
+    <div class="article">
+
+      <h1 class="article-title">Regenerative Potential Index – Identification and Assessment in Amsterdam</h1>
+      <div class="article-date">2024, PhD Research</div>
+
+      <p>
+        The <strong>Regenerative Potential Index (RPI)</strong> is an evaluation framework for assessing the
+        regenerative potential of urban areas — applicable to both <strong>public and private sectors</strong>.
+        Rather than measuring sustainability in isolation, the RPI asks a forward-looking question: <em>how capable
+        is a territory of regenerating itself?</em> It aggregates multiple indicators across four dimensions —
+        Economic, Environmental, Political and Social — into a single composite score (0–100) per territorial unit
+        per year.
+      </p>
+
+      <p>
+        This case study applies the RPI to the <strong>eight districts of the municipality of Amsterdam</strong>
+        over a decade of data (2015–2024). The municipality's overall RPI in 2024 stands at <strong>48.42</strong>,
+        down from 50.19 in 2015. This modest decline conceals important contrasts: the <strong>Environmental</strong>
+        dimension improved (+1.46 pts) while <strong>Economic</strong> performance deteriorated sharply (–7.21 pts,
+        reaching 43.01 in 2024 — the most constrained dimension). The COVID-19 pandemic left a visible shock in
+        2020–2021, particularly on Economic and Political indicators.
+      </p>
+
+      <p>
+        The visualisations below are interactive — hover over data points to inspect values, click legend entries
+        to isolate specific districts or scenarios, and use the dropdown menus to switch between dimensions.
+      </p>
+
+      <!-- 1. Overall time series -->
+      <hr class="chart-divider" />
+      <div class="chart-section">
+        <h2>RPI Overall Score – Time Evolution (2015–2024)</h2>
+        <p class="chart-desc">
+          How has each Amsterdam district's regenerative potential changed over time? The municipality aggregate
+          (black line) declined slightly from 50.19 to 48.42 between 2015 and 2024, masking significant
+          heterogeneity across districts. Hover over any point to inspect values; click a legend entry to
+          isolate a specific district.
+        </p>
+        <iframe class="chart-frame" src="charts/timeseries_overall.html"
+          title="RPI Overall Time Series" loading="lazy"></iframe>
+      </div>
+
+      <!-- 2. Dimension time series -->
+      <hr class="chart-divider" />
+      <div class="chart-section">
+        <h2>RPI by Dimension – Time Evolution</h2>
+        <p class="chart-desc">
+          Not all dimensions evolve the same way. The <strong>Environmental</strong> dimension is the strongest
+          (51.53 in 2024) and has been improving, driven by air quality and energy transitions. The
+          <strong>Economic</strong> dimension is the weakest (43.01) and has declined the most since 2015,
+          reflecting structural shifts in the local economy. Use the dropdown to switch between Economic,
+          Environmental, Political and Social panels.
+        </p>
+        <iframe class="chart-frame" src="charts/timeseries_dimensions.html"
+          title="RPI Dimension Time Series" loading="lazy"></iframe>
+      </div>
+
+      <!-- 3. Histogram 2024 -->
+      <hr class="chart-divider" />
+      <div class="chart-section">
+        <h2>District Comparison – 2024 Snapshot</h2>
+        <p class="chart-desc">
+          Which districts perform best — and worst — in 2024? The bar chart ranks all eight districts
+          plus the municipality aggregate (purple) for each dimension. Significant spatial inequality
+          exists within Amsterdam: some districts score well above average on Social indicators while
+          lagging on Economic ones. Use the dropdown to compare Overall, Economic, Environmental,
+          Political or Social performance.
+        </p>
+        <iframe class="chart-frame" src="charts/histogram_2024.html"
+          title="District Histogram 2024" loading="lazy"></iframe>
+      </div>
+
+      <!-- 4. Scenarios -->
+      <hr class="chart-divider" />
+      <div class="chart-section">
+        <h2>Scenario Projections – 2030 &amp; 2050</h2>
+        <p class="chart-desc">
+          Where is Amsterdam heading? Three scenarios are projected from 2024 onwards using
+          percentile-based annual change rates derived from the historical record:
+          <strong>Constrained</strong> (pessimistic, p25 trend) forecasts a decline to 35.79 by 2050;
+          <strong>Business-As-Usual</strong> (BAU, p50 trend) projects a marginal improvement to 49.34;
+          <strong>Optimistic</strong> (p75 trend) reaches 57.44. The gap between scenarios highlights
+          how sensitive regenerative trajectories are to policy choices made in the next few years.
+        </p>
+        <iframe class="chart-frame" src="charts/scenarios.html"
+          title="RPI Scenarios" loading="lazy"></iframe>
+      </div>
+
+      <!-- 5. Map -->
+      <hr class="chart-divider" />
+      <div class="chart-section">
+        <h2>Interactive District Map – Amsterdam (2024)</h2>
+        <p class="chart-desc">
+          Spatial distribution of RPI Overall scores across Amsterdam's districts in 2024. Darker
+          colours indicate higher regenerative potential. The map reveals clear spatial patterns —
+          inner-city and waterfront districts tend to score differently from outer peripheral ones.
+          Pan, zoom and hover over each district to read its score.
+        </p>
+        <iframe class="chart-frame map" src="charts/map_2024.html"
+          title="Amsterdam District Map" loading="lazy"></iframe>
+      </div>
+
+    </div><!-- /.article -->
+
+    <footer class="article-footer">
+      <span>PhD Research · Urban Regeneration · Management PhD</span>
+      <a href="https://github.com/sergiofspedro/Regenerative-Potential-Index" target="_blank">
+        View source on GitHub →
+      </a>
+    </footer>
+
+  </section>
+
+</main>
+
+<script>
+  function showProject(id, btn) {
+    document.querySelectorAll('main > section').forEach(s => s.style.display = 'none');
+    document.querySelectorAll('.sidebar-project-link').forEach(b => b.classList.remove('active'));
+    const s = document.getElementById('project-' + id);
+    if (s) s.style.display = 'block';
+    if (btn) btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
