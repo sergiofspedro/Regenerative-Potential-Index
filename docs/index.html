@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sérgio Pedro – Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════ SIDEBAR ═══════════════════════ -->
+<aside class="sidebar">
+
+  <div class="sidebar-header">
+    <div class="sidebar-avatar">SP</div>
+    <div class="sidebar-name">Sérgio Pedro</div>
+    <div class="sidebar-role">PhD Researcher · Urban Regeneration &amp; Evaluation Frameworks</div>
+    <div class="sidebar-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/sergiofspedro" target="_blank" title="GitHub">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
+            0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7
+            3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07
+            1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93
+            0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267
+            1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24
+            2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81
+            2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" title="LinkedIn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136
+            1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85
+            3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065
+            2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792
+            0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24
+            22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:YOUR_EMAIL@example.com" title="Email">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9
+            2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="nav-section">Projects</div>
+
+  <div class="nav-item active" onclick="showProject('rpi')">
+    <span class="nav-dot"></span>
+    Regenerative Potential Index – Amsterdam
+  </div>
+
+  <!-- Add future projects here following the same pattern:
+  <div class="nav-item" onclick="showProject('project2')">
+    <span class="nav-dot"></span>
+    Your Next Project
+  </div>
+  -->
+
+</aside>
+
+<!-- ═══════════════════════ MAIN ══════════════════════════ -->
+<main class="main" id="main-content">
+
+  <!-- ── RPI PROJECT ── -->
+  <section id="project-rpi">
+
+    <div class="hero">
+      <div class="hero-tag">PhD Research · Urban Regeneration</div>
+      <h1>Regenerative <span>Potential Index</span></h1>
+      <p class="hero-sub">
+        An evaluation framework for assessing regenerative potential — applicable to both
+        <strong>public and private sectors</strong>. This case study applies the RPI methodology
+        to the districts of the <strong>municipality of Amsterdam</strong>, tracking economic,
+        environmental, political and social dimensions across a decade of data (2015–2024)
+        with scenario projections to 2050.
+      </p>
+      <div class="hero-badges">
+        <span class="badge">🏙️ Amsterdam Districts</span>
+        <span class="badge">📅 2015–2024</span>
+        <span class="badge">🔮 Scenarios to 2050</span>
+        <span class="badge">4 Dimensions</span>
+        <span class="badge">Python · Plotly · Folium</span>
+      </div>
+    </div>
+
+    <div class="charts-section">
+      <div class="section-title">Interactive Visualizations</div>
+
+      <div class="charts-grid">
+
+        <!-- 1. Overall time series -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">RPI Overall – Time Evolution (2015–2024)</div>
+              <div class="card-desc">District-level RPI trajectories over time. Municipality average shown in black. Hover to inspect values; click legend to isolate districts.</div>
+            </div>
+            <div class="card-icon">📈</div>
+          </div>
+          <iframe class="chart-frame" id="frame-ts-overall"
+            src="charts/timeseries_overall.html"
+            title="RPI Overall Time Series"
+            loading="lazy"
+            onerror="showPlaceholder(this)">
+          </iframe>
+        </div>
+
+        <!-- 2. Dimension time series -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">RPI by Dimension – Time Evolution</div>
+              <div class="card-desc">Switch between Economic, Environmental, Political and Social dimensions using the buttons above the chart.</div>
+            </div>
+            <div class="card-icon">🔄</div>
+          </div>
+          <iframe class="chart-frame" id="frame-ts-dims"
+            src="charts/timeseries_dimensions.html"
+            title="RPI Dimension Time Series"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- 3. District comparison 2024 -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">District Comparison – 2024 Snapshot</div>
+              <div class="card-desc">Cross-district RPI scores for 2024. Select Overall or any dimension. Municipality (purple) shown alongside all districts.</div>
+            </div>
+            <div class="card-icon">📊</div>
+          </div>
+          <iframe class="chart-frame" id="frame-hist"
+            src="charts/histogram_2024.html"
+            title="District Histogram 2024"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- 4. Scenarios -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Scenario Projections – 2030 &amp; 2050</div>
+              <div class="card-desc">Three forecast scenarios (Constrained, Business-As-Usual, Optimistic) extrapolated from 2024 historical trends. Toggle lines via the legend.</div>
+            </div>
+            <div class="card-icon">🔮</div>
+          </div>
+          <iframe class="chart-frame" id="frame-scenarios"
+            src="charts/scenarios.html"
+            title="RPI Scenarios"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- 5. Map - full width -->
+        <div class="chart-card full-width">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Interactive District Map – Amsterdam (2024)</div>
+              <div class="card-desc">Choropleth map of RPI Overall scores across Amsterdam's districts in 2024. Pan, zoom and hover over each district for details.</div>
+            </div>
+            <div class="card-icon">🗺️</div>
+          </div>
+          <iframe class="chart-frame" id="frame-map"
+            src="charts/map_2024.html"
+            title="Amsterdam District Map"
+            style="height:520px"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- 6. Correlation heatmap - full width -->
+        <div class="chart-card full-width">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Indicator Correlation Matrix</div>
+              <div class="card-desc">Pairwise Pearson correlations between all normalized indicators. Blue = positive, Red = negative. Hover to read exact values.</div>
+            </div>
+            <div class="card-icon">🔬</div>
+          </div>
+          <iframe class="chart-frame" id="frame-corr"
+            src="charts/correlation.html"
+            title="Indicator Correlation Heatmap"
+            style="height:720px"
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div><!-- /.charts-grid -->
+    </div><!-- /.charts-section -->
+
+  </section><!-- /#project-rpi -->
+
+  <footer class="footer">
+    <span>Sérgio Pedro · PhD Research Portfolio</span>
+    <span>
+      <a href="https://github.com/sergiofspedro/Regenerative-Potential-Index" target="_blank">
+        View source on GitHub →
+      </a>
+    </span>
+  </footer>
+
+</main>
+
+<script>
+  function showProject(id) {
+    document.querySelectorAll('main > section').forEach(s => s.style.display = 'none');
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    const section = document.getElementById('project-' + id);
+    if (section) section.style.display = 'block';
+    event.currentTarget.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
